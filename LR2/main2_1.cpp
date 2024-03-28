@@ -3,29 +3,29 @@
 #include<conio.h>
 using namespace std;
 #define N 5
-void minMatrix(float matrix[][N]);// минимальное значение матрицы
-void maxMatrix(float matrix[][N]);// максимальное значение матрицы
-void maxDownTriangleMatrix(float matrix[][N]);// максимум нижнетреугольной части матрицы
-void maxUpTriangleMatrix(float matrix[][N]);// максимум верхнетреугольной части матрицы
-void minTriangleMatrix(float matrix[][N]);// минимум нижнетреугольной части матрицы
-void minTriangleMatrix(float matrix[][N]);// минимум верхнетреугольной части матрицы
-void maxMainDiagMatrix(float matrix[][N]);// максимум главной диагонали матрицы
-void minMainDiagMatrix(float matrix[][N]);// минимум главной диагонали матрицы
-void maxMatrix(float matrix[][N]);// минимум второстепенной диагонали матрицы
-void maxMatrix(float matrix[][N]);// максимум второстепенной диагонали матрицы
-void maxMatrix(float matrix[][N]);// среднеарифметическое значение элементов матрицы
-void maxMatrix(float matrix[][N]);// среднеарифметическое значение элементов нижнетреугольной части матрицы
-void maxMatrix(float matrix[][N]);// среднеарифметическое значение элементов верхнетреугольной части матрицы
-void maxMatrix(float matrix[][N]);// суммы строк матрицы
-void maxMatrix(float matrix[][N]);// суммы столбцов матрицы
-void maxMatrix(float matrix[][N]);// минимальное значение строк
-void maxMatrix(float matrix[][N]);// минимальное значение столбцов
-void maxMatrix(float matrix[][N]);// максимальное значение строк
-void maxMatrix(float matrix[][N]);// максимальное значение столбцов
-void maxMatrix(float matrix[][N]);// среднеарифметическое значение строк
-void maxMatrix(float matrix[][N]);// среднеарифметическое значение столбцов
-void maxMatrix(float matrix[][N]);// суммы нижне и верхнетреугольных частей матрицы
-void elementAvargeMatrix(float matrix[][N]);// элемент, наиболее близкий по значению к среднеарифметическому 
+void minMatrix(float matrix[][N]);// РјРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РјР°С‚СЂРёС†С‹
+void maxMatrix(float matrix[][N]);// РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РјР°С‚СЂРёС†С‹
+void maxDownTriangleMatrix(float matrix[][N]);// РјР°РєСЃРёРјСѓРј РЅРёР¶РЅРµС‚СЂРµСѓРіРѕР»СЊРЅРѕР№ С‡Р°СЃС‚Рё РјР°С‚СЂРёС†С‹
+void maxUpTriangleMatrix(float matrix[][N]);// РјР°РєСЃРёРјСѓРј РІРµСЂС…РЅРµС‚СЂРµСѓРіРѕР»СЊРЅРѕР№ С‡Р°СЃС‚Рё РјР°С‚СЂРёС†С‹
+void minTriangleMatrix(float matrix[][N]);// РјРёРЅРёРјСѓРј РЅРёР¶РЅРµС‚СЂРµСѓРіРѕР»СЊРЅРѕР№ С‡Р°СЃС‚Рё РјР°С‚СЂРёС†С‹
+void minTriangleMatrix(float matrix[][N]);// РјРёРЅРёРјСѓРј РІРµСЂС…РЅРµС‚СЂРµСѓРіРѕР»СЊРЅРѕР№ С‡Р°СЃС‚Рё РјР°С‚СЂРёС†С‹
+void maxMainDiagMatrix(float matrix[][N]);// РјР°РєСЃРёРјСѓРј РіР»Р°РІРЅРѕР№ РґРёР°РіРѕРЅР°Р»Рё РјР°С‚СЂРёС†С‹
+void minMainDiagMatrix(float matrix[][N]);// РјРёРЅРёРјСѓРј РіР»Р°РІРЅРѕР№ РґРёР°РіРѕРЅР°Р»Рё РјР°С‚СЂРёС†С‹
+void maxMatrix(float matrix[][N]);// РјРёРЅРёРјСѓРј РІС‚РѕСЂРѕСЃС‚РµРїРµРЅРЅРѕР№ РґРёР°РіРѕРЅР°Р»Рё РјР°С‚СЂРёС†С‹
+void maxMatrix(float matrix[][N]);// РјР°РєСЃРёРјСѓРј РІС‚РѕСЂРѕСЃС‚РµРїРµРЅРЅРѕР№ РґРёР°РіРѕРЅР°Р»Рё РјР°С‚СЂРёС†С‹
+void maxMatrix(float matrix[][N]);// СЃСЂРµРґРЅРµР°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ Р·РЅР°С‡РµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°С‚СЂРёС†С‹
+void maxMatrix(float matrix[][N]);// СЃСЂРµРґРЅРµР°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ Р·РЅР°С‡РµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РЅРёР¶РЅРµС‚СЂРµСѓРіРѕР»СЊРЅРѕР№ С‡Р°СЃС‚Рё РјР°С‚СЂРёС†С‹
+void maxMatrix(float matrix[][N]);// СЃСЂРµРґРЅРµР°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ Р·РЅР°С‡РµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РІРµСЂС…РЅРµС‚СЂРµСѓРіРѕР»СЊРЅРѕР№ С‡Р°СЃС‚Рё РјР°С‚СЂРёС†С‹
+void maxMatrix(float matrix[][N]);// СЃСѓРјРјС‹ СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹
+void maxMatrix(float matrix[][N]);// СЃСѓРјРјС‹ СЃС‚РѕР»Р±С†РѕРІ РјР°С‚СЂРёС†С‹
+void maxMatrix(float matrix[][N]);// РјРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ СЃС‚СЂРѕРє
+void maxMatrix(float matrix[][N]);// РјРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ СЃС‚РѕР»Р±С†РѕРІ
+void maxMatrix(float matrix[][N]);// РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ СЃС‚СЂРѕРє
+void maxMatrix(float matrix[][N]);// РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ СЃС‚РѕР»Р±С†РѕРІ
+void maxMatrix(float matrix[][N]);// СЃСЂРµРґРЅРµР°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ Р·РЅР°С‡РµРЅРёРµ СЃС‚СЂРѕРє
+void maxMatrix(float matrix[][N]);// СЃСЂРµРґРЅРµР°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ Р·РЅР°С‡РµРЅРёРµ СЃС‚РѕР»Р±С†РѕРІ
+void maxMatrix(float matrix[][N]);// СЃСѓРјРјС‹ РЅРёР¶РЅРµ Рё РІРµСЂС…РЅРµС‚СЂРµСѓРіРѕР»СЊРЅС‹С… С‡Р°СЃС‚РµР№ РјР°С‚СЂРёС†С‹
+void elementAvargeMatrix(float matrix[][N]);// СЌР»РµРјРµРЅС‚, РЅР°РёР±РѕР»РµРµ Р±Р»РёР·РєРёР№ РїРѕ Р·РЅР°С‡РµРЅРёСЋ Рє СЃСЂРµРґРЅРµР°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРјСѓ
 
 int main()
 {
@@ -65,7 +65,7 @@ void minMatrix(float matrix[][N])
 			}
 		}
 	}
-	cout << "Минимальное значение в матрице = " << min << endl;
+	cout << "ГЊГЁГ­ГЁГ¬Г Г«ГјГ­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ Гў Г¬Г ГІГ°ГЁГ¶ГҐ = " << min << endl;
 
 }
 
@@ -84,7 +84,7 @@ void maxMatrix(float matrix[][N])
 			}
 		}
 	}
-	cout << "Максимальное значение в матрице = " << max << endl;
+	cout << "ГЊГ ГЄГ±ГЁГ¬Г Г«ГјГ­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ Гў Г¬Г ГІГ°ГЁГ¶ГҐ = " << max << endl;
 
 }
 
@@ -127,7 +127,7 @@ void elementAvargeMatrix(float matrix[][N])
 
 	}
 	result = avergeMatrix / (N * N);
-	cout << "Среднеарифметическое значение матрицы равно " << result << endl;
+	cout << "Г‘Г°ГҐГ¤Г­ГҐГ Г°ГЁГґГ¬ГҐГІГЁГ·ГҐГ±ГЄГ®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ Г¬Г ГІГ°ГЁГ¶Г» Г°Г ГўГ­Г® " << result << endl;
 	double minDifference = matrix[0][0];
 	float closestElement;
 
@@ -144,6 +144,6 @@ void elementAvargeMatrix(float matrix[][N])
 		}
 
 	}
-	cout << "самое близкое к среднеарифметическому числу   " << result <<" число " << closestElement;
+	cout << "Г±Г Г¬Г®ГҐ ГЎГ«ГЁГ§ГЄГ®ГҐ ГЄ Г±Г°ГҐГ¤Г­ГҐГ Г°ГЁГґГ¬ГҐГІГЁГ·ГҐГ±ГЄГ®Г¬Гі Г·ГЁГ±Г«Гі   " << result <<" Г·ГЁГ±Г«Г® " << closestElement;
 
 }
